@@ -1,0 +1,89 @@
+---
+title: "What is Git?"
+subtitle: "Quick Background of History, Concepts, and Tools"
+author: "Parfait Gasana"
+date: "Feburary 29, 2024"
+output: 
+  ioslides_presentation:
+    widescreen: true
+    css: images/git-style.css
+    logo: images/git-hdr.png
+    includes:
+      in_header: "images/favicon.html" 
+---
+      
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(RUGtools)
+```
+
+## Git
+
+<div style="float:right"><img src="images/git.png" width="200px" /></div>
+
+- Distributed version control system
+- Created by the Linux kernel development team
+  - Open-source alternative to struggling commercial solution
+  - Needed a simple, fast, fully distributed system
+  - Needed to scale well for large projects with many developers
+- Command-line or GUI solution at local file system
+
+  
+## Pioneering Version Control Storage
+
+- Major Version Control Systems (VCS) use the delta-based version model
+
+<div style="text-align:center"><img src="images/vcs-delta.png" width="400px" /></div>
+
+- Git uses stream of snapshots model (i.e., "mini filesystem") allowing for branching and other features
+
+<div style="text-align:center"><img src="images/vcs-snapshot.png" width="400px" /></div>
+
+
+## Git Workflow of Three States
+
+<div style="text-align:center"><img src="images/git-three-states.png" width="600px" /></div>
+
+  1. Modified: Working tree file(s) were modified 
+  2. Staged: Modified file(s) are selected for commit
+  3. Committed: Stores changes permanently in local database
+
+## Data Science Benefits
+
+- Facilitates reproducibility, replication, testing, validation, etc. 
+- Fosters team collaboration and transparency of scientific method
+- Tracks scripts, changes, and authorship across time
+- Works across stacks, operating systems, docker containers, and virtualenvs
+
+<div style="text-align:center"><img src="images/scientific-method.png" width="350px" /></div>
+
+
+## GitHub != Git 
+
+<div style="text-align:center"><img src="images/github_vs_git.jpeg" width="500px" /></div>
+
+<br/>
+
+<div style="text-align:center"><sub>Others: SQL Server != SQL, XLSX != CSV, XML != TXT</sub></div>
+
+
+## Popular Git Repositories
+
+- <img src="images/github.png" alt="Github icon" width="50px"> GitHub: https://github.com/
+- <img src="images/gitlab.png" alt="Gitlab icon" width="50px"> GitLab: https://gitlab.com/
+- <img src="images/bitbucket.png" alt="Bitbucket icon" width="50px"> BitBucket: https://bitbucket.org/
+- <img src="images/sourceforge.png" alt="SourceForge icon" width="50px"> SourceForge: https://sourceforge.net/
+- <img src="images/perforce.jpg" alt="Perforce icon" width="50px"> Perforce: https://www.perforce.com/
+
+<br/>
+<hr/>
+<div style="font-size: 16px">Note: GitLab is only major repository to provide a free, open-source MIT licensed installation with nearly _all_ features at _zero_ cost.</div>
+
+
+## Enter: CRUG-Works
+
+- Gitlab public group with six projects: https://gitlab.com/crug-works
+
+<div style="text-align:center"><img src="images/crug-works.png" width="1000px" /></div>
+
+
